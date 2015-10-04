@@ -24,12 +24,13 @@
   .generate-list-item-status-color(@color, @status) {
     li:not(.list-nested-item).status-@{status},
     li.list-nested-item.status-@{status} > .list-item {
-      color: @color;
+      color: @deep-purple;
     }
 
     li:not(.list-nested-item).selected.status-@{status},
     li.list-nested-item.selected.status-@{status} > .list-item {
-      color: @color;
+      //color: @color;
+      color: @deep-purple; // very-light-green
     }
   }
 

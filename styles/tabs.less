@@ -10,7 +10,7 @@
 
 .tab-bar {
   height: @tab-height + @tab-top-padding + @tab-bottom-border-height;
-  background: @tab-bar-background-color;
+  background: @black;//@tab-bar-background-color;
   box-shadow: inset 0 -8px 8px -4px rgba(0,0,0, .15);
   padding: 0 10px 0 25px;
   overflow-x: auto;
@@ -41,13 +41,13 @@
     line-height: @tab-height;
     padding: 0;
     margin: 0 20px 0 5px;
-    color: @text-color;
+    color: @very-light-green;
 
     transition: color .1s ease-in;
     border: none;
 
     &, &:before, &:after {
-      background-image: -webkit-linear-gradient(top, lighten(#333, 7%), #333);
+      //background-image: -webkit-linear-gradient(top, lighten(#333, 7%), #333);
       height: @tab-height;
     }
 
@@ -62,17 +62,17 @@
     // left angled edge
     &:before {
       left: -14px;
-      border-top-left-radius: @tab-radius;
-      box-shadow: inset 1px 1px 0 @tab-border-color, -4px 0px 4px rgba(0,0,0,.1);
-      -webkit-transform: skewX(-@tab-skew);
+      //border-top-left-radius: @tab-radius;
+      //box-shadow: inset 1px 1px 0 @tab-border-color, -4px 0px 4px rgba(0,0,0,.1);
+      //-webkit-transform: skewX(-@tab-skew);
     }
 
     // right angled edge
     &:after {
       right: -14px;
-      border-top-right-radius: @tab-radius;
-      box-shadow: inset -1px 1px 0 @tab-border-color, 4px 0px 4px rgba(0,0,0,.1);
-      -webkit-transform: skewX(@tab-skew);
+      //border-top-right-radius: @tab-radius;
+      //box-shadow: inset -1px 1px 0 @tab-border-color, 4px 0px 4px rgba(0,0,0,.1);
+      //-webkit-transform: skewX(@tab-skew);
     }
 
     .close-icon {
